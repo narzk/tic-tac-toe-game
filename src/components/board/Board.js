@@ -39,6 +39,19 @@ export default function Board() {
         return arrayState[a];
       }
     }
+    if (
+      arrayState[0] &&
+      arrayState[1] &&
+      arrayState[2] &&
+      arrayState[3] &&
+      arrayState[4] &&
+      arrayState[5] &&
+      arrayState[6] &&
+      arrayState[7] &&
+      arrayState[8]
+    ) {
+      return "No Body!";
+    }
     return null;
   }
 
@@ -63,8 +76,14 @@ export default function Board() {
         </div>
       </div>
       <div className="board__winner">
-        {" "}
-        the winner is: {calculateWinner(arrayState)}
+        
+        the winner is: 
+        <div>
+        {calculateWinner(arrayState)}
+       </div>
+      </div>
+      <div className="playAgain">
+      <button className="playAgain__button" onClick={()=>setArrayState(Array(9).fill(null))}> Lets Play Again!</button>
       </div>
     </div>
   );

@@ -1,28 +1,39 @@
-.board{
+.board {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  border: 10px solid red;
 
+  &__row {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    margin:0;
-    border: 10px solid red;
+    flex-direction: row;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  &__winner {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 40px;
     
-    &__row{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    &__title{
-        
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        font-size: 40px;
-    }
-    &__winner{
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        font-size: 40px;
-    }
+  }
+}
+.playAgain {
+  display: flex;
+  justify-content: center;
+
+//   flex-direction: column;
+
+  padding: 20px;
+  &__button{
+      font-size: 20px;
+      background-color: #c0f9c0;
+  }
 }
