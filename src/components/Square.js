@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./squareStyle.scss";
 export default function Square(props) {
 //   const [buttonState, setButtonState] = useState("");
