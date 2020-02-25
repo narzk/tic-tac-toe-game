@@ -1,0 +1,13 @@
+.board{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin:0;
+    &__row{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
